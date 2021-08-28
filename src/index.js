@@ -5,11 +5,9 @@ function eval() {
 
 function expressionCalculator(expr) {
     // delete spases
-    
     let expr1 = expr.replace(/ /g, '');
     
     // string to array with numbers (number) & string statements
-
     let arr = [];
     let j = 0;
     let strDig = '';
@@ -43,11 +41,11 @@ function expressionCalculator(expr) {
             n++;
         }
     })
-
+// хрень
     if (n > 3) {
         n = 3;
 }
-
+// Доработать вложенные скобки 
     for (i = 0; i < n; i++) {
         posB = arr.lastIndexOf('(');
         posE = arr.lastIndexOf(')');
@@ -58,15 +56,7 @@ function expressionCalculator(expr) {
     }
     return arrCalc(arr);
 
-
-
-
-
-
-
-
-    function arrCalc(array) {
-        
+    function arrCalc(array) {       
         for (i = 0; i < array.length; i++) {
             if (array[i + 1] === '/' || array[i + 1] === '*') {
                 if (array[i + 1] === '/') {
