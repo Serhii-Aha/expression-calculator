@@ -44,8 +44,8 @@ function expressionCalculator(expr) {
         }
     })
 
-    if (n > 4) {
-    n=4
+    if (n > 3) {
+        n = 3;
 }
 
     for (i = 0; i < n; i++) {
